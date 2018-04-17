@@ -11,4 +11,5 @@ def asset():
     return fname
 
 
-$GHRELEASE_ASSETS = [asset]
+from rever.activities.ghrelease import git_archive_asset
+$GHRELEASE_ASSETS = [asset, git_archive_asset]
